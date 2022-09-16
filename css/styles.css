@@ -1,0 +1,224 @@
+/* колір основного тексту color: #212121; */
+/* вторичний колір color: #757575; */
+/* акцент color: #FFFFFF */
+/* heder 1)logo color: #2196F3(web),color: #000000(studio), */
+/* 2)nav color: #212121(:hover,:focus #2196F3) 3)contact color: #757575(:hover, */
+/* :focus #2196F3) */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+}
+body {
+  background-color: #f5f5f5;
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* heder  */
+.page-header {
+  background-color: #ffffff;
+}
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+
+.logo .logo-studio {
+  color: #000000;
+}
+.site-nav .link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-contact .link {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-contact .link:hover,
+.site-contact .link:focus {
+  color: var(--accent-color);
+}
+
+/* footer */
+.page-footer {
+  background-color: #2f303a;
+}
+.logo-footer .logo-white {
+  color: #ffffff;
+}
+.logo-footer {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+.page-adres {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+.site-contact .link-city {
+  color: #ffffff;
+}
+.link-city:hover,
+.link-city:focus {
+  color: var(--accent-color);
+}
+.site-contact .link-mail {
+  color: rgba(255, 255, 255, 0.6);
+}
+.site-contact .link-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+.link-mail:hover,
+.link-mail:focus {
+  color: #2196f3;
+}
+.link-tel:hover,
+.link-tel:focus {
+  color: var(--accent-color);
+}
+
+/* main index.html*/
+
+/* sec1 */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* тут кнопка */
+.hero .main-button {
+  color: #212121;
+  background-color: #f5f4fa;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+.hero .main-button:hover,
+.main-button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.hero .main-button {
+  cursor: pointer;
+}
+/* Плюси команди */
+.advanteges-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.text-advanteges {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Наша команда */
+.team-section {
+  background-color: #f5f4fa;
+}
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+.text-profession {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+
+/* main portfolio.html*/
+
+/* кнопки */
+.buton-list .button-name {
+  color: #212121;
+  background-color: #f5f4fa;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.buton-list .button-name:hover,
+.buton-list .button-name:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.buton-list .button-name {
+  cursor: pointer;
+}
+.list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.text-description {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
