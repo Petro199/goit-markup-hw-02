@@ -8,11 +8,19 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --logo-black-color: #000000;
+  --secondary-background-color: #2f303a;
+  --third-background-color: #f5f5f5;
+  --fourth-background-color: #f5f4fa;
 }
+
 body {
-  background-color: #f5f5f5;
+  background-color: var(--white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 a {
   text-decoration: none;
@@ -23,7 +31,7 @@ ul {
 
 /* heder  */
 .page-header {
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 .logo {
   color: var(--accent-color);
@@ -31,19 +39,14 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-
-  /* identical to box height */
-
-  letter-spacing: 0.03em;
 }
 
 .logo .logo-studio {
-  color: #000000;
+  color: var(--logo-black-color);
 }
 .site-nav .link {
-  color: #212121;
+  color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -51,10 +54,12 @@ ul {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 .site-contact .link {
-  color: #757575;
+  color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -65,10 +70,10 @@ ul {
 
 /* footer */
 .page-footer {
-  background-color: #2f303a;
+  background-color: var(--secondary-background-color);
 }
 .logo-footer .logo-white {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .logo-footer {
   color: var(--accent-color);
@@ -76,20 +81,16 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  /* identical to box height */
-
-  letter-spacing: 0.03em;
 }
-.page-adres {
+.page-adress {
+  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.7;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
 }
 .site-contact .link-city {
-  color: #ffffff;
+  color: var(--white-color);
+  font-weight: 400;
+  line-height: 24px;
 }
 .link-city:hover,
 .link-city:focus {
@@ -103,7 +104,7 @@ ul {
 }
 .link-mail:hover,
 .link-mail:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .link-tel:hover,
 .link-tel:focus {
@@ -113,11 +114,12 @@ ul {
 /* main index.html*/
 
 /* sec1 */
+
 .hero {
-  background-color: #2f303a;
+  background-color: var(--secondary-background-color);
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -129,8 +131,8 @@ ul {
 }
 /* тут кнопка */
 .hero .main-button {
-  color: #212121;
-  background-color: #f5f4fa;
+  color: var(--white-color);
+  background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -139,70 +141,61 @@ ul {
 }
 .hero .main-button:hover,
 .main-button:focus {
-  color: #ffffff;
-  background-color: var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--white-color);
 }
 .hero .main-button {
   cursor: pointer;
 }
-/* Плюси команди */
-.advanteges-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
+.company-section {
+  background-color: var(--third-background-color);
 }
+/* Плюси команди */
+
 .text-advanteges {
   color: var(--secondary-text-color);
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.7;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
 }
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 /* Наша команда */
 .team-section {
-  background-color: #f5f4fa;
+  background-color: var(--fourth-background-color);
 }
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  /* identical to box height */
-  letter-spacing: 0.03em;
 }
 .text-profession {
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-  /* identical to box height */
-  letter-spacing: 0.03em;
 }
 
 /* main portfolio.html*/
+.page-main {
+  background-color: var(--third-background-color);
+}
 
 /* кнопки */
 .buton-list .button-name {
-  color: #212121;
-  background-color: #f5f4fa;
+  color: var(--primary-text-color);
+  background-color: var(--fourth-background-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  letter-spacing: 0.03em;
 }
 .buton-list .button-name:hover,
-.buton-list .button-name:hover {
-  color: #ffffff;
+.buton-list .button-name:focus {
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 .buton-list .button-name {
@@ -220,5 +213,4 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
-  letter-spacing: 0.03em;
 }
